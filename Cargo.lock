@@ -181,9 +181,11 @@ version = "0.1.0"
 dependencies = [
  "embassy-executor",
  "embassy-time",
+ "embedded-hal 1.0.0",
  "esp-backtrace",
  "esp-hal",
  "esp-println",
+ "lcd1602-driver",
  "log",
 ]
 
@@ -500,6 +502,15 @@ name = "lazy_static"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
+
+[[package]]
+name = "lcd1602-driver"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cdb652c2baa6cb47531bf0b594d0a7c1de1d4a34a69e1c8fdd49a1f2d56a8929"
+dependencies = [
+ "embedded-hal 1.0.0",
+]
 
 [[package]]
 name = "litrs"
